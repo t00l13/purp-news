@@ -1,0 +1,11 @@
+.news__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}

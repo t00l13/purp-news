@@ -1,0 +1,6 @@
+.header__list{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    list-style: none;
+}

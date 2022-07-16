@@ -1,0 +1,9 @@
+.popup__btn-close{
+    background-color:transparent;
+    border: none;
+    background-image: url('../../../images/icons/popup__btn-close.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+}

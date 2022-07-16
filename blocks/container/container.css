@@ -1,0 +1,6 @@
+.container{
+    width: calc(100% - 54px);
+    margin: 0 auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
