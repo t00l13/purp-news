@@ -633,6 +633,7 @@ template {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    word-break: break-all;
 }
 .news__subtitle{
     font-family: 'Despair Display';
@@ -643,6 +644,18 @@ template {
     color:#fff;
     margin: 0;
     padding: 0;
+    word-break: break-all;
+}
+.gallery-news{
+    
+}
+.gallery-news__list{
+    list-style: none;
+    padding: 0;
+    
+}
+.gallery-news__item{
+    
 }
 .footer{
     max-width: 100%;
@@ -763,7 +776,9 @@ template {
     box-sizing:border-box;
     padding: 10px;
 }
-
+.popup__input{
+    word-break: break-all;
+}
 .input__title{
     font-family: 'Inter';
     font-style: normal;
