@@ -48,6 +48,8 @@
 @import url('../blocks/gallery-news/gallery-news.css');
 @import url('../blocks/gallery-news/__list/gallery-news__list.css');
 @import url('../blocks/gallery-news/__item/gallery-news__item.css');
+@import url('../blocks/news/__wrapper/news__wrapper.css');
+@import url('../blocks/news/news-category__list.css');
 
 
 
