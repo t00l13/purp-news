@@ -29,7 +29,6 @@ buttonAddNews.addEventListener('click', () => {
 
 function handlePopupAddNews (inputsData) {
     newsList.addItem(createNewsCard(inputsData));
-    console.log(inputsData);
     popupAddNews.close();
 };
 

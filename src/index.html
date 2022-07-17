@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -16,33 +16,32 @@
                     <img src="<%=require('./images/logo/logo_header.svg')%>" alt="Logo" class="header__logo">
                     <div class="header__wrapper">
                         <img src="<%=require('./images/icons/header__add-news.svg')%>" alt="" class="header__add-news">
+                        <img src="<%=require('./images/icons/header__sort.svg')%>" alt="" class="header__add-news">
                         <div class="header__burger">
                             <span></span>
                         </div>
                         <nav class="header__menu">
                             <ul class="header__list">
-                                <li class="header__list-item"> <a href="#" class="header__link">News</a></li>
-                                <li class="header__list-item"> <a href="#" class="header__link">Articles</a></li>
-                                <li class="header__list-item"> <a href="#" class="header__link">Contacts</a></li>
+                                <li class="header__list-item"> <a href="#" class="header__link">Новости</a></li>
+                                <li class="header__list-item"> <a href="#" class="header__link">Статьи</a></li>
+                                <li class="header__list-item"> <a href="#" class="header__link">Контакты</a></li>
                                 <li class="header__list-item"> <a href="#"
-                                        class="header__link link__button">Registration</a></li>
-                                <li class="header__list-item"> <a href="#" class="header__link link__opened">Add
-                                        news</a> <img class="header__list-icon"
+                                        class="header__link link__button">Регистрация</a></li>
+                                <li class="header__list-item"> <a href="#" class="header__link link__opened">Войти</a> <img class="header__list-icon"
                                         src="<%=require('./images/icons/stars-icon.png')%>" alt=""></li>
                             </ul>
                         </nav>
+
                     </div>
                 </div>
             </header>
 
             <section class="main-news">
                 <p class="main-news__head"> <img src="<%=require('./images/icons/main-news__title-icon.png')%>" alt=""
-                        class="main-news__head-icon"> main news</p>
+                        class="main-news__head-icon"> новость дня</p>
                 <div class="main-news__container">
-                    <h2 class="main-news__title">Nike announced a complete withdrawal from the Russian market</h2>
-                    <p class="main-news__subtitle">A message appeared on the company's Russian website that Nike's
-                        mono-brand stores "will no longer open." The company has been present in Russia since 1994, at
-                        the beginning of March it suspended online sales in the country</p>
+                    <h2 class="main-news__title">Фиолетовый с оранжевым — самое модное цветовое сочетание весны</h2>
+                    <p class="main-news__subtitle">Многие звезды тоже подхватили тренд — вспомните шикарные платье Леди Гаги на премьере фильма «Дом Гуччи» и наряд Зендеи на премии BET Awards в 2021-м. А главные герои стритстайла пошли еще дальше и стали экспериментировать с цветовыми сочетаниями. Наибольшую популярность приобрел тандем фиолетового с оранжевым.</p>
                 </div>
             </section>
 
@@ -68,9 +67,9 @@
                                 src="<%=require('./images/icons/Subtract.svg')%>" alt="" class="footer__icon"></a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li class="footer__list-item"> <a href="" class="footer__link"></a> News</li>
-                    <li class="footer__list-item"> <a href="" class="footer__link"></a> Articles</li>
-                    <li class="footer__list-item"> <a href="" class="footer__link"></a> Contacts</li>
+                    <li class="footer__list-item"> <a href="" class="footer__link"></a> Новости</li>
+                    <li class="footer__list-item"> <a href="" class="footer__link"></a> Статьи</li>
+                    <li class="footer__list-item"> <a href="" class="footer__link"></a> Контакты</li>
                 </ul>
             </div>
         </footer>
@@ -78,25 +77,34 @@
         <div class="popup popup__type_add-news" id="popup__add-news">
             <div class="popup__container">
                 <div class="popup__wrapper">
-                    <h3 class="popup__title">Add news</h3>
+                    <h3 class="popup__title">Новость</h3>
                     <button type="button" class="popup__btn-close"></button>
                 </div>
                 <form class="popup__form" action="index.html" method="post" name="add-news-form" novalidate>
                     <div class="input__area">
-                        <h4 class="input__title">Title</h4>
+                        <h4 class="input__title">Заголовок</h4>
                         <p><textarea class=" popup__input popup__input_type_add-news" name="title"
-                                id="news-title-input" cols="10" rows="5" minlength="25" maxlength="100"
+                                id="news-title-input" cols="10" rows="3" minlength="25" maxlength="100"
                                 required></textarea></p>
                         <span id="news-title-input-error" class="popup__input-error"></span>
                     </div>
                     <div class="input__area">
-                        <h4 class="input__title">Bloqnote</h4>
+                        <h4 class="input__title">Описание</h4>
                         <p><textarea class=" popup__input popup__input_type_add-news" name="description"
                                 id="news-title-input" cols="10" rows="5" minlength="45" maxlength="400"
                                 required></textarea></p>
                         <span id="news-subtitle-input-error" class="popup__input-error"></span>
                     </div>
-                    <button type="submit" class="popup__btn-save" name="button">Submit <img
+                    <select class="news-category__list popup__input" name="category" id="news-category">
+                        <option value="Nike">Nike</option>
+                        <option value="Haliky">Haliky</option>
+                        <option value="SCR Merch">SCR Merch</option>
+                        <option value="Adore Moscow">Adore Moscow</option>
+                        <option value="RNDM Crew">RNDM Crew</option>
+                        <option value="Mess">Mess</option>
+                        <option value="Марк Родовский(Yumms)">Марк Родовский(Yumms)</option>
+                    </select>
+                    <button type="submit" class="popup__btn-save" name="button">Опубликовать<img
                             src="<%=require('./images/icons/btn-save.svg')%>" alt=""
                             class="popup__btn-save__icon"></button>
                 </form>
@@ -104,15 +112,16 @@
         </div>
 
         <template id="news-card" class="news-card-template">
-            <li class="gallery-news__item news">
-                    <p class="news__head"><img src="<%=require('./images/icons/news__head-icon.png')%>" alt=""
-                            class="news__head-icon"> news</p>
+            <li class="gallery-news__item news" data-category="">
+                    <div class="news__wrapper">
+                        <img src="<%=require('./images/icons/news__head-icon.png')%>" alt=""
+                        class="news__head-icon">
+                        <p class="news__head"></p>
+                    </div>
+
                     <div class="news__container">
-                        <h3 class="news__title">The owner of Zara announced his intention to return to Russia "as soon
-                            as possible"</h3>
-                        <p class="news__subtitle">
-                            Spanish retailer Inditex closed its stores in the country in March. The company is
-                            monitoring the situation and would like to return when possible, its CEO said.</p>
+                        <h3 class="news__title"></h3>
+                        <p class="news__subtitle"></p>
                     </div>
             </li>
         </template>

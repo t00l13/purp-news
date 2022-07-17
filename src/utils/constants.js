@@ -1,15 +1,28 @@
 const initialPost = [
     {
-      title: 'The owner of Zara announced his intention to return to Russia "as soon as possible"',
-      description: 'Spanish retailer Inditex closed its stores in the country in March. The company is monitoring the situation and would like to return when possible, its CEO said.'
+      category: 'Nike',
+      title: 'Nike объявила о полном уходе с российского рынка',
+      description: 'На российском сайте компании появилось сообщение, что монобрендовые магазины Nike «больше не откроются». Компания присутствовала в России с 1994 года, в начале марта она приостановила онлайн-продажи в стране'
     }, 
     {
-        title: 'Iconic Dior boutique on Avenue Montaigne reopens in Paris',
-        description: 'After two and a half years of reconstruction, the Dior boutique in Paris will reopen its doors on March 6 at the famous address of 30 Avenue Montaigne. The legendary mansion that enchanted Christian Dior in 1946 has been a witness to the collections of the fashion house for more than seven decades.'
+        category: 'Haliky',
+        title: 'Бренд Haliky открыл свой первый флагменский магазин в Москве',
+        description: 'Рады представить вам первый флагманский магазин от Haliky. Часы-работы: 12:00-22:00 Адрес:Ул. Тверская 20/1 стр. 4. Так же в пятницу мы отмечаем открытие нашего первого флагманского магазина в Москве! С нас бесплатный алкоголь, лучшие диджеи Москвы эксклюзивные айтемы в магазине.'
     }, 
     {
-        title: 'Purple and orange - the most fashionable color combination of spring',
-        description: 'We all remember that Pantone announced the color of 2022 lilac, very close to purple, or, as the Very Peri Institute called it. And before that, we saw plum, lilac, eggplant and other similar shades in the spring-summer 2022 collections of Valentino, Isabel Marant and Lanvin.'
+        category: 'Марк Родовский(Yumms)',
+        title: 'Марк Родовский хочет добавить в SOLDOUTMARKET отдельнйы раздел для кроссовок',
+        description: 'Так как находить интересные пары стало сложнее, мы подумываем над тем, чтобы сделать небольшой реселл-шоп в рамках уже существующего Солдаутмаркета, где будет скромный сток ходовых недорогих позиций, а также возможность привезти вам пару под заказ за 3-4 недели.'
+    },
+    {
+        category: 'Марк Родовский(Yumms)',
+        title: 'Марк Родовский открыл новый магазин "YUMMS"',
+        description: 'В Москве по адресу: Кривоколенный пер., 10 строение 6, Марк Родовский открыл новый магазин-кафе под названием "YUMMS", в этом кафе можно попробывать мороженное, кофе и т.д, а так же купить новый мерч'
+    },
+    {
+        category: 'SRC Merch',
+        title: 'Последний дроп от SRC Merch продался за 2 минуты',
+        description: 'Последний дроп "STAR ZIP-HOODIE", разлетелся за 2 минуты поставив ноый рекорд в ру-стритвире! Данила Лебедев заработал около 1.5 миллиона за 2 минуты распродав 200 зип-худи'
     },
 ];
 
