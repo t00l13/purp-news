@@ -473,18 +473,7 @@ template {
 .page.lock{
     overflow: hidden;
 }
-.header__menu{
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    background-color: #4D2971;
-    padding: 150px 0 0 0;
-    transition: all 0.3s ease 0s;
-  }
-  .header__menu.active{
-    top: 0;
-  }
+
   .header__menu{
     position: fixed;
     top: -100%;
@@ -601,6 +590,15 @@ template {
     padding: 0;
     margin-top: 24px;
 }
+
+.news.hide{
+    display: none;
+}
+
+.anime {
+    transform: scale(0);
+    opacity: 0;
+  }
 .news__head{
     font-family: 'Inter';
     font-style: normal;
@@ -675,7 +673,6 @@ template {
     appearance: none; 
     overflow: hidden;
     background: url(6954f4b4e0e297fc64dc.svg) no-repeat right; 
-    background-size:13%;
 }
 
 .footer{
@@ -768,6 +765,7 @@ template {
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+    border: 1px solid #9845EB;
 }
 .popup__container{
     background-color: #fff;
