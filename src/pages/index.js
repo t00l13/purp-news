@@ -10,12 +10,14 @@ import Section from '../components/Section.js';
 import NewsCard from '../components/NewsCard.js';
 import PopupWithForm from '../components/PopupWithForm.js';
 
-const burgerSpan = document.querySelector('.header__burger');
+const burgerIcon = document.querySelector('.header__burger');
 const headerMenu = document.querySelector('.header__menu');
 const bodyPage = document.querySelector('.page');
+const formAddNews = document.querySelector('.popup__form');
 
-burgerSpan.addEventListener('click', () => {
-    burgerSpan.classList.toggle('active');
+
+burgerIcon.addEventListener('click', () => {
+    burgerIcon.classList.toggle('active');
     headerMenu.classList.toggle('active');
     bodyPage.classList.toggle('lock');
 });
@@ -29,6 +31,7 @@ buttonAddNews.addEventListener('click', () => {
 
 function handlePopupAddNews (inputsData) {
     newsList.addItem(createNewsCard(inputsData));
+    formAddNews.reset();
     popupAddNews.close();
 };
 
@@ -52,3 +55,5 @@ const newsList = new Section (
     selectorObject.galleryNewsSelector,
 );
 newsList.renderItems();
+console.log(document.querySelector('.news-card-template'));
+
