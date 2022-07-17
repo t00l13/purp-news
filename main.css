@@ -610,7 +610,7 @@ template {
     color: #858585;
     margin: 0;
     padding: 0;
-    padding-left: 15px;
+    padding-left: 5px;
 }
 .news__head-icon{
     width: 20px;
@@ -633,7 +633,7 @@ template {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
-    word-break: break-all;
+    word-break: break-word;
 }
 .news__subtitle{
     font-family: 'Despair Display';
@@ -644,7 +644,7 @@ template {
     color:#fff;
     margin: 0;
     padding: 0;
-    word-break: break-all;
+    word-break: break-word;
 }
 .gallery-news{
     
@@ -657,6 +657,27 @@ template {
 .gallery-news__item{
     
 }
+.news__wrapper{
+    display: flex;
+    padding-left: 15px;
+}
+.news-category__list{
+    border: 3px solid #9845EB;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: 'Despair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px;
+    margin-bottom: 20px;
+    appearance: none; 
+    overflow: hidden;
+    background: url(6954f4b4e0e297fc64dc.svg) no-repeat right; 
+    background-size:13%;
+}
+
 .footer{
     max-width: 100%;
     height: 120px;
@@ -770,7 +791,7 @@ template {
     font-size: 16px;
     line-height: 28px;
     width: 100%;
-    min-height: 150px;
+    min-height: 100px;
     border-radius:20px;
     color:#4D2971;
     box-sizing:border-box;
