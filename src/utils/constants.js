@@ -26,16 +26,38 @@ const initialPost = [
     },
 ];
 
+const commentsList = [
+    {
+        name:'hater',
+        comment: 'АХахаа какая же фигня',
+    },
+    {
+        name:'Toolie',
+        comment: 'Согласен фиолетовый сейчас в моде! Всю неделю буду ходить только в фиолетовом',
+    },
+    {
+        name:'nastiem',
+        comment: 'Фиолетовый мой любимый! Крутая статья',
+    },
+
+];
+
 const selectorObject = {
     popupAddNewsSelector : '.popup__type_add-news',
     galleryNewsSelector : '.gallery-news__list',
+    galleryCommentsSelector: '.news__comment__list',
+    commentsSelector: '.news__comments',
     newsCardId: '#news-card',
+    newsCommentId: '#news-comment',
 }
 
 const buttonAddNews = document.querySelector('.header__add-news');
+const buttonComments = document.querySelector('.news__comment');
 
 export {
     initialPost,
+    commentsList,
     selectorObject,
-    buttonAddNews
+    buttonAddNews,
+    buttonComments,
 };

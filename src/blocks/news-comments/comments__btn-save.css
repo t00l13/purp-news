@@ -1,0 +1,20 @@
+.comments__btn-save{
+    background-color:#4d2971;
+    border: none;
+    border-radius:50%;
+    width: 47px;
+    height: 47px;
+    margin-left: 10px;
+}
+
+.comments__btn-save__icon{
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.comments__form-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}

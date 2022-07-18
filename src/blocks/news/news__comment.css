@@ -1,0 +1,10 @@
+.news__comment{
+    background-image: url('../../images/icons/news-card__comment.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 0;
+}

@@ -1,14 +1,17 @@
 import './index.css';
 import {
      initialPost,
+     commentsList,
      selectorObject,
      buttonAddNews,
-
+     buttonComments
 } from '../utils/constants';
 import Popup from '../components/Popup.js';
 import Section from '../components/Section.js';
 import NewsCard from '../components/NewsCard.js';
 import PopupWithForm from '../components/PopupWithForm.js';
+import AddComment from '../components/AddComment.js';
+import Comment from '../components/Comment.js';
 
 const burgerIcon = document.querySelector('.header__burger');
 const headerMenu = document.querySelector('.header__menu');
@@ -25,19 +28,16 @@ burgerIcon.addEventListener('click', () => {
 const popupAddNews = new Popup(selectorObject.popupAddNewsSelector);
 popupAddNews.setEventListeners();
 
+const sectionNewsComments = new AddComment(selectorObject.commentsSelector);
+sectionNewsComments.setEventListeners();
+
 buttonAddNews.addEventListener('click', () => {
     popupAddNews.open();
 })
 
-function handlePopupAddNews (inputsData) {
-    newsList.addItem(createNewsCard(inputsData));
-    formAddNews.reset();
-    popupAddNews.close();
-};
-
-const formPopupAddNews = new PopupWithForm(selectorObject.popupAddNewsSelector , handlePopupAddNews);
-formPopupAddNews.setEventListeners();
-
+buttonComments.addEventListener('click', () => {
+    sectionNewsComments.toggle();
+})
 
 
 function createNewsCard(dataNewsCard) {
@@ -49,11 +49,46 @@ const newsList = new Section (
     {
         items:initialPost,
         render: (newsCardItem) => {
-            newsList.addItem(createNewsCard(newsCardItem));
+            newsList.prependItem(createNewsCard(newsCardItem));
         },
     },
     selectorObject.galleryNewsSelector,
 );
 newsList.renderItems();
-console.log(document.querySelector('.news-card-template'));
+
+function createNewsComments(dataNewsComment) {
+    const newsComment = new Comment ({data: dataNewsComment}, selectorObject.newsCommentId);
+    
+    return newsComment.generateComment();
+}
+
+const newsCommentList = new Section (
+    {
+        items:commentsList,
+        render: (newsCommentItem) => {
+            newsCommentList.appendItem(createNewsComments(newsCommentItem));
+        },
+    },
+    selectorObject.galleryCommentsSelector,
+)
+newsCommentList.renderItems();
+
+
+function handlePopupAddNews (inputsData) {
+    newsList.prependItem(createNewsCard(inputsData));
+    formAddNews.reset();
+    popupAddNews.close();
+};
+
+function handleSectionAddComments (inputsData) {
+    newsCommentList.appendItem(createNewsComments(inputsData));
+}
+
+
+const formPopupAddNews = new PopupWithForm(selectorObject.popupAddNewsSelector , handlePopupAddNews);
+formPopupAddNews.setEventListeners();
+
+const formAddComment = new AddComment(selectorObject.commentsSelector, handleSectionAddComments);
+formAddComment.setEventListeners();
+
 
