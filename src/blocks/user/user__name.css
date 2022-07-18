@@ -1,0 +1,9 @@
+.user__name{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    word-break: break-word;
+}

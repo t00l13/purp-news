@@ -50,10 +50,20 @@
 @import url('../blocks/gallery-news/__item/gallery-news__item.css');
 @import url('../blocks/news/__wrapper/news__wrapper.css');
 @import url('../blocks/news/news-category__list.css');
-
-
-
-
+@import url('../blocks/news/news__like.css');
+@import url('../blocks/news/news__comment.css');
+@import url('../blocks/news/news__comments.css');
+@import url('../blocks/news/news__comment__list.css');
+@import url('../blocks/news/news__comment__item.css');
+@import url('../blocks/news-comments/news-comments__form.css');
+@import url('../blocks/news-comments/comments__form-wrapper.css');
+@import url('../blocks/news-comments/comments__form__title.css');
+@import url('../blocks/news-comments/comments__input.css');
+@import url('../blocks/news-comments/comments__btn-save.css');
+@import url('../blocks/comment/comment.css');
+@import url('../blocks/user/user__avatar.css');
+@import url('../blocks/user/user__name.css');
+@import url('../blocks/user/user__comment.css');
 
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/footer__logo.css');

@@ -1,0 +1,14 @@
+.comments__input{
+    width: 80%;
+    border-radius:15px;
+    border:none;
+    box-shadow: none;
+    margin-top: 10px;
+    height: 45px;
+    padding: 5px;
+    font-family: 'Despair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}

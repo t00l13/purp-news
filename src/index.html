@@ -40,6 +40,26 @@
                 <div class="main-news__container">
                     <h2 class="main-news__title">Фиолетовый с оранжевым — самое модное цветовое сочетание весны</h2>
                     <p class="main-news__subtitle">Многие звезды тоже подхватили тренд — вспомните шикарные платье Леди Гаги на премьере фильма «Дом Гуччи» и наряд Зендеи на премии BET Awards в 2021-м. А главные герои стритстайла пошли еще дальше и стали экспериментировать с цветовыми сочетаниями. Наибольшую популярность приобрел тандем фиолетового с оранжевым.</p>
+                    <div class="news__wrapper">
+                        <div class="news__like"></div>
+                        <div class="news__comment"></div>
+                    </div>
+                </div>
+                <div class="news__comments">
+                    <ul class="news__comment__list">
+
+                    </ul>
+                    <form class="news-comments__form" action="index.html" method="post" name="add-comment-form" novalidate>
+                        <h4 class="comments__form__title">Ваш комментарий</h4>
+                        <input type="text" name="name" id="comments-name" class="comments__input" minlength="3" maxlength="25">
+                        <div class="comments__form-wrapper">
+
+                            <textarea name="comment" id="comments-comment" cols="5" rows="2" minlength="5" maxlength="50" class="comments__input"></textarea>
+                            <button type="submit" class="comments__btn-save" name="button"><img
+                                src="<%=require('./images/icons/btn-save.svg')%>" alt=""
+                                class="comments__btn-save__icon"></button>
+                        </div>
+                    </form>
                 </div>
             </section>
 
@@ -120,9 +140,24 @@
                     <div class="news__container">
                         <h3 class="news__title"></h3>
                         <p class="news__subtitle"></p>
+                        <div class="news__wrapper">
+                            <div class="news__like"></div>
+                        </div>
                     </div>
             </li>
         </template>
+
+        <template class="news-comments-template" id="news-comment">
+            <li class="news__comment__item comment">
+                <img src="<%=require('./images/icons/user__avatar.svg')%>" alt="" class="user__avatar">
+                <div class="user__wrapper">
+                    <h4 class="user__name"></h4>
+                    <p class="user__comment"></p>
+                </div>
+            </li>
+        </template>
+
+
 
     </main>
 </body>
