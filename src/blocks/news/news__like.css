@@ -11,3 +11,17 @@
 .news__like.active{
     background-image: url('../../images/icons/news-card__like_active.svg');
 }
+
+.main-news__like{
+    background-image: url('../../images/icons/news-card__like.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.main-news__like.active{
+    background-image: url('../../images/icons/news-card__like_active.svg');
+}

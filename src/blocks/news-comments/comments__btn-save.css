@@ -5,12 +5,13 @@
     width: 47px;
     height: 47px;
     margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .comments__btn-save__icon{
     margin: 0;
-    margin-left: 5px;
-    margin-top: 5px;
 }
 
 .comments__form-wrapper{

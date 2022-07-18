@@ -17,7 +17,20 @@
 @import url('../blocks//header/__link/header__link.css');
 @import url('../blocks/header/__logo/header__logo.css');
 @import url('../blocks/header/__add-news/header__add-news.css');
+@import url('../blocks/header/__profile/header__profile.css');
 @import url('../blocks/header/__wrapper/header__wrapper.css');
+
+
+@import url('../blocks/profile/profile__area.css');
+@import url('../blocks/profile/profile__avatar.css');
+@import url('../blocks/profile/profile__wrapper.css');
+@import url('../blocks/profile/profile__name.css');
+@import url('../blocks/profile/profile__job.css');
+@import url('../blocks/profile/profile__section.css');
+@import url('../blocks/profile/profile__input.css');
+@import url('../blocks/profile/profile-edit__btn-save.css');
+@import url('../blocks/profile/profile-edit__btn-save__icon.css');
+@import url('../blocks/profile/profile-edit__btn.css');
 
 
 @import url('../blocks/link/link.css');

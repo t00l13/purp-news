@@ -44,20 +44,29 @@ const commentsList = [
 
 const selectorObject = {
     popupAddNewsSelector : '.popup__type_add-news',
+    popupProfileSelector : '.popup__type_profile',
     galleryNewsSelector : '.gallery-news__list',
     galleryCommentsSelector: '.news__comment__list',
     commentsSelector: '.news__comments',
     newsCardId: '#news-card',
     newsCommentId: '#news-comment',
+    profileNameSelector: '.profile__name',
+    profileJobSelector: '.profile__job',
 }
 
+const buttonProfile = document.querySelector('.header__profile');
 const buttonAddNews = document.querySelector('.header__add-news');
 const buttonComments = document.querySelector('.news__comment');
+const buttonEditProfile = document.querySelector('.profile-edit__btn');
+const popupProfileInputs = document.querySelectorAll('.profile__input');
 
 export {
     initialPost,
     commentsList,
     selectorObject,
+    buttonProfile,
     buttonAddNews,
     buttonComments,
+    buttonEditProfile,
+    popupProfileInputs,
 };

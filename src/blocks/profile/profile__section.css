@@ -1,0 +1,8 @@
+.profile__section{
+    margin-top: 20px;
+    display: none;
+}
+
+.profile__section.active{
+    display: block;
+}

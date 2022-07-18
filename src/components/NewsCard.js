@@ -16,6 +16,16 @@ export default class NewsCard {
         return newsCardElement;
     }
 
+    _setEventListeners(){
+        this._likeButton.addEventListener('click', () => {
+            this._handleLikeNews();
+        });
+    }
+
+    _handleLikeNews() {
+        this._likeButton.classList.toggle('active');
+    }
+
     generateCard() {
         this._news = this._getTemplate();
 
@@ -23,11 +33,14 @@ export default class NewsCard {
         this._newsDescription = this._news.querySelector('.news__subtitle');
         this._newsCategory = this._news.dataset;
         this._newsHead = this._news.querySelector('.news__head');
+        this._likeButton = this._news.querySelector('.news__like');
 
         this._newsTitle.textContent = this._title;
         this._newsDescription.textContent = this._description;
         this._newsCategory.textContent = this._category;
         this._newsHead.textContent = this._category;
+
+        this._setEventListeners();
 
         return this._news;
     }
