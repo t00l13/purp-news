@@ -539,6 +539,7 @@ template {
     margin: 0;
     padding: 0;
     margin-top: 24px;
+    position: relative;
 }
 
 .main-news__container{
@@ -548,6 +549,8 @@ template {
     margin: 0;
     padding: 34px 23px;
     margin-top: 5px;
+    z-index: 2;
+    position: relative;
 }
 .main-news__title{
     font-family: 'Inter';
@@ -618,7 +621,7 @@ template {
     border-radius: 20px;
     border: 2px solid #9845EB;
     margin: 0;
-    padding: 34px 23px;
+    padding: 25px 23px;
     margin-top: 5px;
 }
 .news__title{
@@ -675,6 +678,127 @@ template {
     background: url(6954f4b4e0e297fc64dc.svg) no-repeat right; 
 }
 
+.news__like{
+    background-image: url(e2057fa347850a4600f2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.news__like.active{
+    background-image: url(2205510134b3da55301b.svg);
+}
+.news__comment{
+    background-image: url(218bbbf8f7d5a974f424.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 0;
+}
+.news__comments{
+    position: relative;
+    top: -20px;
+    width: 100%;
+    background-color: #9845EB;
+    border-radius: 0 0 20px 20px;
+    display: none;
+    transition: all 0.3s ease 0s;
+}
+
+.news__comments.active{
+    display: block;
+}
+.news__comment__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.news__comment__item{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.news-comments__form{
+    padding: 15px;
+}
+
+.comments__form__title{
+    margin: 0;
+    margin-left: 20px;
+}
+.comments__input{
+    width: 80%;
+    border-radius:15px;
+    border:none;
+    box-shadow: none;
+    margin-top: 10px;
+    height: 45px;
+    padding: 5px;
+    font-family: 'Despair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+.comments__btn-save{
+    background-color:#4d2971;
+    border: none;
+    border-radius:50%;
+    width: 47px;
+    height: 47px;
+    margin-left: 10px;
+}
+
+.comments__btn-save__icon{
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.comments__form-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.user__avatar{
+    border-radius:50%;
+    width: 55px;
+    height: 55px;
+}
+
+.user__wrapper{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.user__name{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    word-break: break-word;
+}
+.user__comment{
+    font-family: 'Despair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 5px;
+    word-break: break-word;
+    width: 90%;
+}
 .footer{
     max-width: 100%;
     height: 120px;
