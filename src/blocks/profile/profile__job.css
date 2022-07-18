@@ -1,0 +1,10 @@
+.profile__job{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    word-break: break-all;
+    color: #9845EB;
+    margin: 10px 0 0 20px;
+}

@@ -15,6 +15,7 @@
                 <div class="header__body">
                     <img src="<%=require('./images/logo/logo_header.svg')%>" alt="Logo" class="header__logo">
                     <div class="header__wrapper">
+                        <img src="<%=require('./images/icons/header__profile-icon.svg')%>" class="header__profile" alt="">
                         <img src="<%=require('./images/icons/header__add-news.svg')%>" alt="" class="header__add-news">
                         <div class="header__burger">
                             <span></span>
@@ -41,7 +42,7 @@
                     <h2 class="main-news__title">Фиолетовый с оранжевым — самое модное цветовое сочетание весны</h2>
                     <p class="main-news__subtitle">Многие звезды тоже подхватили тренд — вспомните шикарные платье Леди Гаги на премьере фильма «Дом Гуччи» и наряд Зендеи на премии BET Awards в 2021-м. А главные герои стритстайла пошли еще дальше и стали экспериментировать с цветовыми сочетаниями. Наибольшую популярность приобрел тандем фиолетового с оранжевым.</p>
                     <div class="news__wrapper">
-                        <div class="news__like"></div>
+                        <div class="main-news__like"></div>
                         <div class="news__comment"></div>
                     </div>
                 </div>
@@ -126,6 +127,34 @@
                             src="<%=require('./images/icons/btn-save.svg')%>" alt=""
                             class="popup__btn-save__icon"></button>
                 </form>
+            </div>
+        </div>
+
+        <div class="popup popup__type_profile">
+            <div class="popup__container">
+                <div class="popup__wrapper">
+                    <h3 class="popup__title">Профиль</h3>
+                    <button type="button" class="popup__btn-close"></button>
+                </div>
+                <div class="profile__area">
+                    <img class="profile__avatar" src="<%=require('./images/icons/user__avatar.svg')%>" alt="">
+                    <div class="profile__wrapper">
+                        <div class="profile__wrapper_name">
+                            <h4 class="profile__name">Toolie</h4>
+                            <img src="<%=require('./images/icons/edit__profile.png')%>" alt="" class="profile-edit__btn">
+                        </div>
+                        <p class="profile__job">Young web-developer</p>
+                    </div>
+                </div>
+                <div class="profile__section">
+                    <form class="popup__form" action="index.html" method="post" name="edit-profile-form" novalidate>
+                        <input type="text" name="nickname" id="nickname-input" class="popup__input profile__input" minlength="3" maxlength="18">
+                        <input type="text" name="job" id="job-input" class="popup__input profile__input" minlength="3" maxlength="25">
+                        <button type="submit" class="profile-edit__btn-save" name="button"><img
+                            src="<%=require('./images/icons/edit-profile__btn-save.svg')%>" alt=""
+                            class="profile-edit__btn-save__icon"></button>
+                    </form>
+                </div>
             </div>
         </div>
 
