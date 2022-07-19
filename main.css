@@ -456,18 +456,18 @@ template {
 
 .header__burger.active:before{
     transform: rotate(45deg);
-    top: 16px;
+    top: 13px;
 }
 .header__burger.active:after{
     transform: rotate(-45deg);
-    bottom: 8px;
+    bottom:11px;
 }
 
 .header__burger.active span{
     transform: scale(0);
 }
 .header__burger.active{
-    min-width: 50px;
+    min-width: 35px;
 }
 
 .page.lock{
@@ -482,6 +482,7 @@ template {
     background-color:  #4D2971;
     padding: 150px 0 0 0;
     transition: all 0.3s ease 0s;
+    z-index: 5;
   }
   .header__menu.active{
     top: 0;
@@ -492,6 +493,7 @@ template {
     flex-direction: column;
     align-items:center;
     list-style: none;
+    padding: 0;
 }
 .header__list-item{
     margin: 0;
@@ -522,6 +524,7 @@ template {
 }
 .header__profile{
     margin-right: 10px;
+    z-index: 10;
 }
 .header__wrapper{
     display: flex;
