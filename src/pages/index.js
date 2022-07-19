@@ -1,13 +1,13 @@
 import './index.css';
 import {
-     initialPost,
-     commentsList,
-     selectorObject,
-     buttonAddNews,
-     buttonComments,
-     buttonProfile,
-     buttonEditProfile,
-     popupProfileInputs,
+    initialPost,
+    commentsList,
+    selectorObject,
+    buttonAddNews,
+    buttonComments,
+    buttonProfile,
+    buttonEditProfile,
+    popupProfileInputs,
 } from '../utils/constants';
 import Popup from '../components/Popup.js';
 import Section from '../components/Section.js';
@@ -65,13 +65,14 @@ buttonComments.addEventListener('click', () => {
 
 
 function createNewsCard(dataNewsCard) {
-    const newsCard = new NewsCard ({data: dataNewsCard}, selectorObject.newsCardId);
+    const newsCard = new NewsCard({
+        data: dataNewsCard
+    }, selectorObject.newsCardId);
     return newsCard.generateCard();
 }
 
-const newsList = new Section (
-    {
-        items:initialPost,
+const newsList = new Section({
+        items: initialPost,
         render: (newsCardItem) => {
             newsList.prependItem(createNewsCard(newsCardItem));
         },
@@ -81,14 +82,15 @@ const newsList = new Section (
 newsList.renderItems();
 
 function createNewsComments(dataNewsComment) {
-    const newsComment = new Comment ({data: dataNewsComment}, selectorObject.newsCommentId);
-    
+    const newsComment = new Comment({
+        data: dataNewsComment
+    }, selectorObject.newsCommentId);
+
     return newsComment.generateComment();
 }
 
-const newsCommentList = new Section (
-    {
-        items:commentsList,
+const newsCommentList = new Section({
+        items: commentsList,
         render: (newsCommentItem) => {
             newsCommentList.appendItem(createNewsComments(newsCommentItem));
         },
@@ -98,29 +100,29 @@ const newsCommentList = new Section (
 newsCommentList.renderItems();
 
 
-function handlePopupAddNews (inputsData) {
+function handlePopupAddNews(inputsData) {
     newsList.prependItem(createNewsCard(inputsData));
     formAddNews.reset();
     popupAddNews.close();
 };
 
-function handleSectionAddComments (inputsData) {
+function handleSectionAddComments(inputsData) {
     inputsData.name = profileName.textContent;
     newsCommentList.appendItem(createNewsComments(inputsData));
-    
+
 }
 
-function handleSectionEditProfile (inputsData) {
+function handleSectionEditProfile(inputsData) {
     userInfo.setUserInfo(inputsData);
     sectionEditProfile.classList.remove('active');
 }
 
 
 
-const formPopupAddNews = new PopupWithForm(selectorObject.popupAddNewsSelector , handlePopupAddNews);
+const formPopupAddNews = new PopupWithForm(selectorObject.popupAddNewsSelector, handlePopupAddNews);
 formPopupAddNews.setEventListeners();
 
-const formPopupEditProfile = new PopupWithForm(selectorObject.popupProfileSelector , handleSectionEditProfile);
+const formPopupEditProfile = new PopupWithForm(selectorObject.popupProfileSelector, handleSectionEditProfile);
 formPopupEditProfile.setEventListeners();
 
 const formAddComment = new AddComment(selectorObject.commentsSelector, handleSectionAddComments);
@@ -135,6 +137,6 @@ const userInfo = new UserInfo({
 function handleTextInput() {
     const userData = userInfo.getUserInfo();
     popupProfileInputs.forEach(input => {
-      input.value = userData[input.name];
+        input.value = userData[input.name];
     });
-  }
+}

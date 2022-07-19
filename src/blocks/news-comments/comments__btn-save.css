@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    box-shadow: 1px 1px 20px 3px #ffb700;
 }
 
 .comments__btn-save__icon{

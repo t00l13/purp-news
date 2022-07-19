@@ -15,7 +15,8 @@
                 <div class="header__body">
                     <img src="<%=require('./images/logo/logo_header.svg')%>" alt="Logo" class="header__logo">
                     <div class="header__wrapper">
-                        <img src="<%=require('./images/icons/header__profile-icon.svg')%>" class="header__profile" alt="">
+                        <img src="<%=require('./images/icons/header__profile-icon.svg')%>" class="header__profile"
+                            alt="">
                         <img src="<%=require('./images/icons/header__add-news.svg')%>" alt="" class="header__add-news">
                         <div class="header__burger">
                             <span></span>
@@ -36,7 +37,10 @@
                         class="main-news__head-icon"> Новость дня</p>
                 <div class="main-news__container">
                     <h2 class="main-news__title">Фиолетовый с оранжевым — самое модное цветовое сочетание весны</h2>
-                    <p class="main-news__subtitle">Многие звезды тоже подхватили тренд — вспомните шикарные платье Леди Гаги на премьере фильма «Дом Гуччи» и наряд Зендеи на премии BET Awards в 2021-м. А главные герои стритстайла пошли еще дальше и стали экспериментировать с цветовыми сочетаниями. Наибольшую популярность приобрел тандем фиолетового с оранжевым.</p>
+                    <p class="main-news__subtitle">Многие звезды тоже подхватили тренд — вспомните шикарные платье Леди
+                        Гаги на премьере фильма «Дом Гуччи» и наряд Зендеи на премии BET Awards в 2021-м. А главные
+                        герои стритстайла пошли еще дальше и стали экспериментировать с цветовыми сочетаниями.
+                        Наибольшую популярность приобрел тандем фиолетового с оранжевым.</p>
                     <div class="news__wrapper">
                         <div class="main-news__like"></div>
                         <div class="news__comment"></div>
@@ -46,13 +50,16 @@
                     <ul class="news__comment__list">
 
                     </ul>
-                    <form class="news-comments__form" action="index.html" method="post" name="add-comment-form" novalidate>
-                        <h4 class="comments__form__title">Ваш комментарий</h4>                        <div class="comments__form-wrapper">
+                    <form class="news-comments__form" action="index.html" method="post" name="add-comment-form"
+                        novalidate>
+                        <h4 class="comments__form__title">Ваш комментарий</h4>
+                        <div class="comments__form-wrapper">
 
-                            <textarea name="comment" id="comments-comment" cols="5" rows="2" minlength="5" maxlength="50" class="comments__input"></textarea>
+                            <textarea name="comment" id="comments-comment" cols="5" rows="2" minlength="5"
+                                maxlength="50" class="comments__input"></textarea>
                             <button type="submit" class="comments__btn-save" name="button"><img
-                                src="<%=require('./images/icons/btn-save.svg')%>" alt=""
-                                class="comments__btn-save__icon"></button>
+                                    src="<%=require('./images/icons/btn-save.svg')%>" alt=""
+                                    class="comments__btn-save__icon"></button>
                         </div>
                     </form>
                 </div>
@@ -96,9 +103,8 @@
                 <form class="popup__form" action="index.html" method="post" name="add-news-form" novalidate>
                     <div class="input__area">
                         <h4 class="input__title">Заголовок</h4>
-                        <p><textarea class=" popup__input popup__input_type_add-news" name="title"
-                                id="news-title-input" cols="10" rows="3" minlength="25" maxlength="100"
-                                required></textarea></p>
+                        <p><textarea class=" popup__input popup__input_type_add-news" name="title" id="news-title-input"
+                                cols="10" rows="3" minlength="25" maxlength="100" required></textarea></p>
                         <span id="news-title-input-error" class="popup__input-error"></span>
                     </div>
                     <div class="input__area">
@@ -135,18 +141,21 @@
                     <div class="profile__wrapper">
                         <div class="profile__wrapper_name">
                             <h4 class="profile__name">Toolie</h4>
-                            <img src="<%=require('./images/icons/edit__profile.png')%>" alt="" class="profile-edit__btn">
+                            <img src="<%=require('./images/icons/edit__profile.png')%>" alt=""
+                                class="profile-edit__btn">
                         </div>
                         <p class="profile__job">Young web-developer</p>
                     </div>
                 </div>
                 <div class="profile__section">
                     <form class="popup__form" action="index.html" method="post" name="edit-profile-form" novalidate>
-                        <input type="text" name="nickname" id="nickname-input" class="popup__input profile__input" minlength="3" maxlength="18">
-                        <input type="text" name="job" id="job-input" class="popup__input profile__input" minlength="3" maxlength="25">
+                        <input type="text" name="nickname" id="nickname-input" class="popup__input profile__input"
+                            minlength="3" maxlength="18">
+                        <input type="text" name="job" id="job-input" class="popup__input profile__input" minlength="3"
+                            maxlength="25">
                         <button type="submit" class="profile-edit__btn-save" name="button"><img
-                            src="<%=require('./images/icons/edit-profile__btn-save.svg')%>" alt=""
-                            class="profile-edit__btn-save__icon"></button>
+                                src="<%=require('./images/icons/edit-profile__btn-save.svg')%>" alt=""
+                                class="profile-edit__btn-save__icon"></button>
                     </form>
                 </div>
             </div>
@@ -154,19 +163,18 @@
 
         <template id="news-card" class="news-card-template">
             <li class="gallery-news__item news" data-category="">
-                    <div class="news__wrapper">
-                        <img src="<%=require('./images/icons/news__head-icon.png')%>" alt=""
-                        class="news__head-icon">
-                        <p class="news__head"></p>
-                    </div>
+                <div class="news__wrapper">
+                    <img src="<%=require('./images/icons/news__head-icon.png')%>" alt="" class="news__head-icon">
+                    <p class="news__head"></p>
+                </div>
 
-                    <div class="news__container">
-                        <h3 class="news__title"></h3>
-                        <p class="news__subtitle"></p>
-                        <div class="news__wrapper">
-                            <div class="news__like"></div>
-                        </div>
+                <div class="news__container">
+                    <h3 class="news__title"></h3>
+                    <p class="news__subtitle"></p>
+                    <div class="news__wrapper">
+                        <div class="news__like"></div>
                     </div>
+                </div>
             </li>
         </template>
 
@@ -186,6 +194,3 @@
 </body>
 
 </html>
-
-
-
