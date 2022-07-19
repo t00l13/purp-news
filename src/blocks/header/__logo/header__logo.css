@@ -1,3 +1,5 @@
 .header__logo{
     z-index: 10;
+    box-shadow: 1px 1px 20px #ffb700;
+    border-radius: 20px;
 }

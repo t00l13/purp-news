@@ -1,7 +1,8 @@
 .news__container{
     max-width: 100%;
     border-radius: 20px;
-    border: 2px solid #9845EB;
+    border: 2px solid #ffb700;
+    box-shadow: 1px 1px 20px 1px #ffb700;
     margin: 0;
     padding: 25px 23px;
     margin-top: 5px;

@@ -11,4 +11,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
+    border: 1px solid #ffb700;
+    box-shadow: 1px 1px 20px #ffb700;
 }
