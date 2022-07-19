@@ -516,7 +516,7 @@ template {
 }
 .header__logo{
     z-index: 10;
-    box-shadow: 1px 1px 20px #ffb700;
+    box-shadow: 1px 1px 10px #ffb700;
     border-radius: 20px;
 }
 .header__add-news{
@@ -642,7 +642,6 @@ template {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
-    text-shadow: 0px 0px 4px #ffb700;
 }
 .main-news__subtitle{
     font-family: 'Despair Display';
