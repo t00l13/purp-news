@@ -38,18 +38,18 @@
 
 .header__burger.active:before{
     transform: rotate(45deg);
-    top: 16px;
+    top: 13px;
 }
 .header__burger.active:after{
     transform: rotate(-45deg);
-    bottom: 8px;
+    bottom:11px;
 }
 
 .header__burger.active span{
     transform: scale(0);
 }
 .header__burger.active{
-    min-width: 50px;
+    min-width: 35px;
 }
 
 .page.lock{

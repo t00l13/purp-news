@@ -23,12 +23,8 @@
                         <nav class="header__menu">
                             <ul class="header__list">
                                 <li class="header__list-item"> <a href="#" class="header__link">Новости</a></li>
-                                <li class="header__list-item"> <a href="#" class="header__link">Статьи</a></li>
+                                <li class="header__list-item"> <a href="#" class="header__link">Профиль</a></li>
                                 <li class="header__list-item"> <a href="#" class="header__link">Контакты</a></li>
-                                <li class="header__list-item"> <a href="#"
-                                        class="header__link link__button">Регистрация</a></li>
-                                <li class="header__list-item"> <a href="#" class="header__link link__opened">Войти</a> <img class="header__list-icon"
-                                        src="<%=require('./images/icons/stars-icon.png')%>" alt=""></li>
                             </ul>
                         </nav>
                     </div>
@@ -51,9 +47,7 @@
 
                     </ul>
                     <form class="news-comments__form" action="index.html" method="post" name="add-comment-form" novalidate>
-                        <h4 class="comments__form__title">Ваш комментарий</h4>
-                        <input type="text" name="name" id="comments-name" class="comments__input" minlength="3" maxlength="25">
-                        <div class="comments__form-wrapper">
+                        <h4 class="comments__form__title">Ваш комментарий</h4>                        <div class="comments__form-wrapper">
 
                             <textarea name="comment" id="comments-comment" cols="5" rows="2" minlength="5" maxlength="50" class="comments__input"></textarea>
                             <button type="submit" class="comments__btn-save" name="button"><img

@@ -23,6 +23,7 @@ const bodyPage = document.querySelector('.page');
 const formAddNews = document.querySelector('.popup__form');
 const mainNewsLike = document.querySelector('.main-news__like');
 const sectionEditProfile = document.querySelector('.profile__section');
+const profileName = document.querySelector('.profile__name');
 
 mainNewsLike.addEventListener('click', () => {
     mainNewsLike.classList.toggle('active');
@@ -104,7 +105,9 @@ function handlePopupAddNews (inputsData) {
 };
 
 function handleSectionAddComments (inputsData) {
+    inputsData.name = profileName.textContent;
     newsCommentList.appendItem(createNewsComments(inputsData));
+    
 }
 
 function handleSectionEditProfile (inputsData) {
