@@ -516,6 +516,8 @@ template {
 }
 .header__logo{
     z-index: 10;
+    box-shadow: 1px 1px 20px #ffb700;
+    border-radius: 20px;
 }
 .header__add-news{
     z-index: 10;
@@ -530,6 +532,7 @@ template {
     display: flex;
     align-items: center;
 }
+
 .profile__area{
     display: flex;
 }
@@ -624,7 +627,11 @@ template {
     margin-top: 5px;
     z-index: 2;
     position: relative;
+    box-shadow: 1px 1px 20px 1px #ffb700;
 }
+
+
+
 .main-news__title{
     font-family: 'Inter';
     font-style: normal;
@@ -635,6 +642,7 @@ template {
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
+    text-shadow: 0px 0px 4px #ffb700;
 }
 .main-news__subtitle{
     font-family: 'Despair Display';
@@ -652,7 +660,8 @@ template {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #858585;
+    color: #e8ff0094;
+    text-shadow: 0px 0px 8px;
     margin: 0;
     padding: 0;
     padding-left: 15px;
@@ -681,7 +690,8 @@ template {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #858585;
+    color: #e8ff0094;
+    text-shadow: 0px 0px 8px;
     margin: 0;
     padding: 0;
     padding-left: 5px;
@@ -692,7 +702,8 @@ template {
 .news__container{
     max-width: 100%;
     border-radius: 20px;
-    border: 2px solid #9845EB;
+    border: 2px solid #ffb700;
+    box-shadow: 1px 1px 20px 1px #ffb700;
     margin: 0;
     padding: 25px 23px;
     margin-top: 5px;
@@ -835,6 +846,8 @@ template {
     font-weight: 700;
     font-size: 16px;
     line-height: 28px;
+    border: 1px solid #ffb700;
+    box-shadow: 1px 1px 20px #ffb700;
 }
 .comments__btn-save{
     background-color:#4d2971;
@@ -846,6 +859,7 @@ template {
     display: flex;
     justify-content: center;
     align-items:center;
+    box-shadow: 1px 1px 20px 3px #ffb700;
 }
 
 .comments__btn-save__icon{

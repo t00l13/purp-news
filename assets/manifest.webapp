@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "pupr-news",
+  "description": "Website with news about clothes and fashion, implemented on js",
+  "icons": {
+    "60": "firefox_app_60x60.png",
+    "128": "firefox_app_128x128.png",
+    "512": "firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}
